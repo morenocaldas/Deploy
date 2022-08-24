@@ -16,14 +16,13 @@ DROP TABLE IF EXISTS clients;
 
 CREATE TABLE clients(
   id serial PRIMARY KEY,
-  name varchar(100) NOT NULL,
-  email varchar(100) NOT NULL,
-  cpf varchar(11) NOT NULL,
-  phone varchar(13) NOT NULL,
+  name varchar(50) NOT NULL,
+  email varchar(40) NOT NULL,
+  password varchar(30) NOT NULL,
   cep varchar(8),
-  address varchar(100),
-  complement varchar(100),
-  neighborhood varchar(100),
-  city varchar(100),
-  state varchar(100)
+  address varchar(60),
+  complement varchar(40),
+  neighborhood varchar(30),
+  city varchar(30),
+  state varchar(20)
   );
